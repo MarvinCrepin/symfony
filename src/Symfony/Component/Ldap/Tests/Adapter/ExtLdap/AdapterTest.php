@@ -117,7 +117,7 @@ class AdapterTest extends LdapTestCase
         $ldap->getConnection()->bind('cn=admin,dc=symfony,dc=com', 'invalid_password');
     }
 
-    public function testBindWithConnectionTimeout()
+    public function testBindWithConnectionTimeout() 
     {
         $ldap = new Adapter($this->getLdapConfig([\LDAP_OPT_NETWORK_TIMEOUT => 1]));
 
